@@ -6,8 +6,8 @@ const Heading = () => {
             <figure>
                 <img className="profile" src={require('../../static/profile-pic.jpg')} alt="author-profile-pic" />                
             </figure>
-            <h1>Melissa Jones</h1>
-            <p>Photographer and Haiku Writer</p>
+            <h1 style={{ color: "var(--text-light)"}}>Melissa Jones</h1>
+            <h6>Photographer and Haiku Writer</h6>
         </div>
     )
 }

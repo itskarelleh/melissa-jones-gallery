@@ -2,6 +2,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/storage';
 import 'firebase/firestore';
 import "firebase/auth";
+
 var firebaseConfig = {
     apiKey: "AIzaSyBXuQfmB8-QEoJzLyZ4-duvBx6n0OlKDTs",
     authDomain: "karelle-photogallery.firebaseapp.com",

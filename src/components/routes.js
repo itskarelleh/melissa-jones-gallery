@@ -6,7 +6,7 @@ Link } from 'react-router-dom';
 import About from '../screens/About';
 import Authenticate from '../screens/Authenticate';
 import Gallery from '../screens/Gallery';
-import Blog from '../screens/Authenticate';
+import Blog from '../screens/Blog';
 import Home from '../screens/Home';
 import MainNav from './navbar/MainNav';
 

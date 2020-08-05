@@ -21,7 +21,7 @@ const ImageForm = () => {
 
     return (
         <form>
-            <label>
+            <label className="image-label-form">
                 <input type="file" onChange={changeHandler} />
                 <span>+</span>
             </label>

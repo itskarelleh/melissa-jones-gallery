@@ -2,12 +2,15 @@
 
 :root {
   --primary: rgb(71, 204, 182);
-  --text: rgba(0,0,0,0.5);
+  --body-text: rgba(0,0,0,0.5);
+  --text-light: #e4fffa;
+  --heading: rgba(71, 204, 182, 0.664);
 }
+
 html{
   font-family: 'PT Serif', serif;
   font-size: 20px;
-  color: var(--text);
+  color: var(--body-text);
 }
 
 body{
@@ -42,14 +45,20 @@ ul li {
   font-weight: 400;
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+}
 
 li {
+  list-style: none;
   line-height: 25px;
+  margin-bottom: 25px;
 }
 
 li a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--body-text);
 }
 
 .App{
@@ -111,13 +120,13 @@ form{
   text-align: center;
 }
 
-label input{
+.image-label-form input{
   height: 0;
   width: 0;
   opacity: 0;
 }
 
-label {
+.image-label-form {
   display: block;
   width: 30px;
   height: 30px;
@@ -130,7 +139,7 @@ label {
   font-size: 24px;
 }
 
-label:hover{
+.image-label-form:hover{
   background: var(--primary);
   color: white;
 }
@@ -143,6 +152,7 @@ label:hover{
 .page-header{
   margin-top: 75px;
   text-align: center;
+  color: var(--heading);
 }
 /* Progress Bar */
 .progress-bar {
