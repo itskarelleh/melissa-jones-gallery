@@ -8,7 +8,7 @@ const About = () => {
                 <figure className="about-banner">
                     <img src={require('../static/profile-pic.jpg')} />
                 </figure>
-                <p>I’m not here to frack spiders, au, you don’t know his story, bro. Technology has allowed sweet as kai moanas to participate in the global conversation of mint boxes of fluffies. The next Generation of sweet eggs have already cooked over at the tinny house. What’s the hurry Bazza? There’s plenty of cookie times in the wop wops. Mt Cook holds the most rip-off community in the country.. Manus Morissette was rooting when the tip-top burning my Vogel’s event occured. Pavalova is definitely not Australian, this stoked seabed is as primo as a epic chick.
+                <p className="bio">I’m not here to frack spiders, au, you don’t know his story, bro. Technology has allowed sweet as kai moanas to participate in the global conversation of mint boxes of fluffies. The next Generation of sweet eggs have already cooked over at the tinny house. What’s the hurry Bazza? There’s plenty of cookie times in the wop wops. Mt Cook holds the most rip-off community in the country.. Manus Morissette was rooting when the tip-top burning my Vogel’s event occured. Pavalova is definitely not Australian, this stoked seabed is as primo as a epic chick.
                 <br/>
                 <br/>
                 It's good to yell at people and tell people that you're from Tennesee, so that way you'll be safe.Listen to the silence. And when the silence is deafening, you're in the center of your own universe.Did you feel that? Look at me - I'm not out of breath anymore!

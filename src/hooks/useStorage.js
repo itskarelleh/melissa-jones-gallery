@@ -8,7 +8,7 @@ const useStorage = (file) => {
 
     useEffect(() => {
         const storageRef = projectStorage.ref(file.name);
-        const collectioRef = projectFireStore.collection('images');
+        const collectionRef = projectFireStore.collection('images');
 
         storageRef.put(file).on('state_changed', (snap) => {
             let percentage = (snap.bytesTransferred / snap.totalBytes ) * 100;
@@ -18,7 +18,7 @@ const useStorage = (file) => {
         }, async () => {
             const url = await storageRef.getDownloadURL();
             const createdAt = timestamp();
-            collectioRef.add({ url, createdAt });
+            collectionRef.add({ url, createdAt });
             setUrl(url);
         })
     }, [file]);

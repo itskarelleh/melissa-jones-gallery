@@ -4,10 +4,10 @@ const Heading = () => {
     return (
         <div className="head">
             <figure>
-                <img className="profile" src={require('../../static/profile-pic.jpg')} alt="author-profile-pic" />                
+                <img className="profile" src={require('../../static/profile-pic-1x1.jpg')} alt="author-profile-pic" />                
             </figure>
-            <h1 style={{ color: "var(--text-light)"}}>Melissa Jones</h1>
-            <h6>Photographer and Haiku Writer</h6>
+            <h1 className="site-title">Melissa Jones</h1>
+            <h6>Photographer</h6>
         </div>
     )
 }

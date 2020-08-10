@@ -1,8 +1,7 @@
-@media screen and (min-width: 320px) and (max-width: 414) {
+/* @media screen and (min-width: 320px) and (max-width: 414) {
     .sidebar {
         height: 75px;
         width: 100%;
-        position: relative;
       }
 
     .head {
@@ -27,4 +26,4 @@
     .head p{
         display: none;
     }
-}
+} */

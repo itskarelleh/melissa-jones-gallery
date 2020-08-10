@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ArticleList, ArticleForm } from '../components/blog';
+import { AuthContext } from '../components/admin/AuthProvider';
 
 const Blog = () => {
+    const { currentUser } = useContext(AuthContext);
     return(
         <div>
             <h1 className="page-header">Blog</h1>
-            <ArticleForm />
+            { !currentUser ? null : <ArticleForm /> }
             <ArticleList />
         </div>
     )

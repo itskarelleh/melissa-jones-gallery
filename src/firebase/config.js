@@ -3,7 +3,7 @@ import 'firebase/storage';
 import 'firebase/firestore';
 import "firebase/auth";
 
-var firebaseConfig = {
+var config = {
     apiKey: "AIzaSyBXuQfmB8-QEoJzLyZ4-duvBx6n0OlKDTs",
     authDomain: "karelle-photogallery.firebaseapp.com",
     databaseURL: "https://karelle-photogallery.firebaseio.com",
@@ -13,7 +13,7 @@ var firebaseConfig = {
     appId: "1:950285698495:web:682cd9ceadc4d953f28d0a"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(config);
 
   const projectStorage = firebase.storage();
   const projectFireStore = firebase.firestore();
@@ -21,3 +21,4 @@ var firebaseConfig = {
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
   export { projectFireStore, projectStorage, projectAuth, timestamp };
+  export default firebase;

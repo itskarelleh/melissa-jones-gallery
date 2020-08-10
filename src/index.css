@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=PT+Serif:wght@400;700&display=swap');
 
 :root {
-  --primary: rgb(71, 204, 182);
+  --primary: rgb(71 204 136);
   --body-text: rgba(0,0,0,0.5);
   --text-light: #e4fffa;
-  --heading: rgba(71, 204, 182, 0.664);
+  --heading: rgba(71, 204, 136, 0.75);
+}
+
+form label {
+  margin-right: 10px;
+}
+.form-group {
+  text-align: left;
+  display: inline-flex;
+  width: 30vw;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+button{
+  background: var(--primary);
+  border: none;
+  padding: 10px;
+  min-width: 75px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'PT Serif', serif;
 }
 
 html{
@@ -82,9 +103,10 @@ li a {
 }
 
 .hero figure img {
-  width: 150%;
+  width: 100%;
   mix-blend-mode: multiply;
-  opacity: 50%;
+  opacity: 75%;
+
 }
 /* Sidebar */
 .sidebar{
@@ -94,6 +116,10 @@ li a {
   top: 0;
   height: 100vh;
   width: 100%;
+}
+
+.site-title{ 
+  color: var(--text-light);
 }
 
 .head{
@@ -213,7 +239,7 @@ form{
 .about-grid {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  padding: 50px;
+  padding: 25px 50px;
 }
 
 .about-banner {
@@ -228,8 +254,136 @@ form{
   position: relative;
   bottom: 15vh;
 }
+
+.bio::first-letter {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--primary);
+
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+/* Admin */
+
+.admin-header {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 11px;
+  background: rgb(22 158 135);
+}
+
+#admin {
+  background: rgb(13 107 91);
+}
+
+.panels {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    align-items: center;
+    width: 100%;
+}
 /* Misc */
 
 .hide-on-desktop {
   display: none;
+}
+
+/* Media Queries*/
+@media (min-width: 320px) and (max-width: 414px) {
+  
+  html{
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+  
+  h3{
+    font-size: 1.5em;
+  }
+  
+  .sidebar {
+    height: 75px;
+    width: 100%;
+  }
+
+  .head {
+      margin: 0;
+      width: 75%;
+  }
+
+  .head figure{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin-top: 2.5em;
+  }
+  .mobile h1 {
+      display: inline-block;
+    font-size: 1.5em;
+    vertical-align: middle;
+      margin-top: 0px;
+  }
+
+  .head p{
+      display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    position: absolute;
+    background: rgb(71 204 136 / 71%);
+    z-index: 1;
+    height: 100%;
+  }
+
+  .mobile .container {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+  }
+
+  .mobile .site-title {
+    color: var(--primary);
+  }
+
+  .mobile .menu {
+    display: block;
+  }
+
+  .mobile .head{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .main-nav div {
+    display: none;
+  }
+
+  .main-nav > .site-title{
+    display: block;
+  }
+
+  .mobile a {
+    color: var(--body-text);
+  }
+
+  .mobile .mobile-menu {
+      width: 50%;
+      height: 100%;
+      display: block;
+      background-color: aliceblue;
+  }
+
 }

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
     return(
-        <div>
+        <div className="menu">
             <ul style={{ textAlign: "center" }}>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/blog">Blog</NavLink></li>
