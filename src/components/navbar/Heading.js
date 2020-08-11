@@ -9,7 +9,7 @@ const Heading = () => {
             <Link to="/" style={{ textDecoration: 'none'}}>
                 <h1 className="site-title">Melissa Jones</h1>
             </Link>
-            <h6 className="hide-on-mobile">Photographer</h6>
+            <h6 className="tagline">Photographer</h6>
         </div>
     )
 }

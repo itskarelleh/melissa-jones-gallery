@@ -254,6 +254,10 @@ form{
   padding-bottom: 20px;
 }
 
+.article:last-child{
+  border-bottom: none;
+}
+
 .category-label  {
     color: var(--primary);
     float: right;
@@ -262,6 +266,8 @@ form{
     text-align: right;
     padding-left: 25px;
 }
+
+
 /* About */
 
 .about-grid {
@@ -319,6 +325,22 @@ form{
     align-items: center;
     width: 100%;
 }
+
+/* Footer */
+
+footer {
+  bottom: 10px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer li {
+  display: inline; 
+  margin-right: 20px;
+  font-size: 1em;
+}
+
 /* Misc */
 @media (min-width: 720px) {
   .hide-on-desktop {
@@ -410,11 +432,19 @@ form{
 
   .mobile .head{
     padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 30px;
     width: 100%;
   }
 
   .main-nav .head figure {
+    display: none;
+  }
+
+  .main-nav footer {
+    display: none;
+  }
+
+  .main-nav .head .tagline{
     display: none;
   }
 
@@ -437,6 +467,12 @@ form{
     text-align: right;
   }
 
+  /* Footer */
+  footer li {
+    font-size: 1.5em;
+  }
+  
+
   /* HomePage / Hero */
   .hero figure img {
     width: 220%;
@@ -444,4 +480,12 @@ form{
     right: 46vw;
   }
 
+  /* Modal */
+  .backdrop {
+    display: flex;
+  }
+
+  .backdrop img {
+    align-self: center;
+  }
 }

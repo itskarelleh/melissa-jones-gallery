@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from './Heading';
 import Menu from './Menu';
+import Footer from './Footer';
 
 const MobileMenu = ({ toggle, setToggle }) => {
 
@@ -18,6 +19,7 @@ const MobileMenu = ({ toggle, setToggle }) => {
                     <Heading />
                     <Menu className="mobile-menu"/>
                 </div>
+                <Footer />
             </div>
         </aside>
     )

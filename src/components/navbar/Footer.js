@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Footer = () => {
+const Footer = () => {
     return(
         <footer>
             <ul>
@@ -28,3 +28,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer;
