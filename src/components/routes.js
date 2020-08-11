@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router,
 Route,
 Switch,
@@ -14,12 +14,14 @@ import { AuthProvider } from './admin/AuthProvider';
 import PrivateRoute from './admin/PrivateRoute';
 import Dashboard from './admin/Dashboard';
 import MobileMenu from './navbar/MobileMenu';
+import { ArticleDetails } from './blog';
 
 export default function Routes() {
+    const [ toggle, setToggle] = useState({display: 'none'});
     return(
         <Router>
-            <MainNav />
-            <MobileMenu />
+            <MainNav setToggle={setToggle} />
+            <MobileMenu toggle={toggle} setToggle={setToggle} />
             <AuthProvider>
                 <Switch>
                     <Route exact path = "/" component={Home} />
@@ -27,6 +29,7 @@ export default function Routes() {
                     <Route path ="/authenticate" component={Authenticate} />
                     <Route path ="/blog" component={Blog} />
                     <Route path ="/gallery" component={Gallery} />
+                    <Route path="/blog/article" component={ArticleDetails} />
                     <Route path ="/admin" component={Admin} />
                     <PrivateRoute path ="/dashboard" component={Dashboard} />
                 </Switch>

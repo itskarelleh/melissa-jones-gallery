@@ -1,18 +1,23 @@
 import React from 'react';
 import useFireStore from '../../hooks/useFireStore';
+import moment from 'moment';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import ArticleDetails from './ArticleDetails';
 
-const ArticleList = ({ setSelectedArticle }) => {
+const ArticleList = () => {
 
     const { docs } = useFireStore('articles');
-    console.log(docs);
     return(
         <div className="articles">
             <div className="list">
                 { docs && docs.map(doc => (
-                <div>
+                <div className="article">
+                    <span className="category-label">{doc.category}</span>
+                    <br />
                     <h3>{doc.title}</h3>
-                    <span>{doc.category}</span>
+                    <p>{moment(doc.createdAt.toDate()).calendar()}</p>
+                        <p>{doc.content}</p>
                 </div>
                 ))}
             </div>

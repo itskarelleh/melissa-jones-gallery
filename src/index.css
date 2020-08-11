@@ -96,6 +96,15 @@ li a {
   height: 100%;
 }
 
+.hero-text {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    max-width: 45%;
+    text-align: right;
+    right: 50px;
+    bottom: 50px;
+}
 .hero {
   background: var(--primary);
   overflow: hidden;
@@ -234,6 +243,25 @@ form{
   border: 3px solid white;
 }
 
+/* Blog */
+.articles {
+  padding: 50px;
+}
+
+.article{
+  border-bottom: 1px solid var(--body-text);
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.category-label  {
+    color: var(--primary);
+    float: right;
+    border-bottom: 1px solid;
+    min-width: 100px;
+    text-align: right;
+    padding-left: 25px;
+}
 /* About */
 
 .about-grid {
@@ -292,14 +320,15 @@ form{
     width: 100%;
 }
 /* Misc */
-
-.hide-on-desktop {
-  display: none;
+@media (min-width: 720px) {
+  .hide-on-desktop {
+    display: none;
+  }
 }
 
 /* Media Queries*/
 @media (min-width: 320px) and (max-width: 414px) {
-  
+  /* Global */
   html{
     font-size: 14px;
   }
@@ -312,9 +341,18 @@ form{
     font-size: 1.5em;
   }
   
+  /* Navigation */
   .sidebar {
     height: 75px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .mobile .container .wrapper{
+    align-self: center;
   }
 
   .head {
@@ -322,7 +360,14 @@ form{
       width: 75%;
   }
 
-  .head figure{
+  .head h1 {
+    display: inline-block;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin: 0px;
+  }
+
+  .mobile .head figure{
       display: inline-block;
       width: 100px;
       height: 100px;
@@ -350,6 +395,8 @@ form{
   .mobile .container {
     background-color: white;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     width: 50%;
   }
 
@@ -367,12 +414,8 @@ form{
     width: 100%;
   }
 
-  .main-nav div {
+  .main-nav .head figure {
     display: none;
-  }
-
-  .main-nav > .site-title{
-    display: block;
   }
 
   .mobile a {
@@ -384,6 +427,21 @@ form{
       height: 100%;
       display: block;
       background-color: aliceblue;
+  }
+
+  .close-menu{
+    background: none;
+    color: var(--primary);
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: right;
+  }
+
+  /* HomePage / Hero */
+  .hero figure img {
+    width: 220%;
+    position: relative;
+    right: 46vw;
   }
 
 }

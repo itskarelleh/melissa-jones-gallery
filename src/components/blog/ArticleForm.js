@@ -7,7 +7,7 @@ const ArticleForm = () => {
     const [ content, setContent ] = useState(null);
     const [ error, setError ] = useState();
     
-    const categories = [ "photography", "lifestyle", "writing", "travel"];
+    const categories = [ "Photography", "Lifestyle", "Writing", "Travel", "Other", "Poem"];
     const [ selectedCategory, setCategory] = useState(null);
     
     const db = projectFireStore.collection('articles');
@@ -51,11 +51,6 @@ const ArticleForm = () => {
                 <br />
                 <button type="submit">Submit</button>
             </form>
-            <div>
-                {title}
-                {content}
-                {selectedCategory}
-            </div>
         </div>
     )
 }
