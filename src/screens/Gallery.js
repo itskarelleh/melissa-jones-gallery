@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import {ImageForm, ImageGrid, Modal}  from '../components/image-grid';
 import { AuthContext } from '../components/admin/AuthProvider';
+import '../components/image-grid/ImageGrid.css';
 
 const Gallery = () => {
     const [selectedImg, setSelectedImg] = useState(null);

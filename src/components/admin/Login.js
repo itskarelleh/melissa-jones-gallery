@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef, useCallback, useContext} from 'react';
+import React, { useCallback, useContext} from 'react';
 import { withRouter, Redirect } from 'react-router';
 import config from '../../firebase/config';
 import { AuthContext } from './AuthProvider';
-import { motion } from 'framer-motion';
 
 const Login = ({ history }) => {
     const { currentUser } = useContext(AuthContext);

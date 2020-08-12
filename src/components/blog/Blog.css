@@ -1,0 +1,24 @@
+/* Blog */
+.articles {
+    padding: 50px;
+}
+  
+.article{
+    border-bottom: 1px solid var(--body-text);
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.article:last-child{
+    border-bottom: none;
+}
+  
+.category-label  {
+    color: var(--primary);
+    float: right;
+    border-bottom: 1px solid;
+    min-width: 100px;
+    text-align: right;
+    padding-left: 25px;
+}
+  

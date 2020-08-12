@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import config, { projectFireStore, timestamp } from '../../firebase/config';
-import useForm from '../../hooks/useForm';
+import React, { useState } from 'react';
+import { projectFireStore, timestamp } from '../../firebase/config';
 
 const ArticleForm = () => {
     const [ title, setTitle ] = useState(null);
     const [ content, setContent ] = useState(null);
-    const [ error, setError ] = useState();
     
     const categories = [ "Photography", "Lifestyle", "Writing", "Travel", "Other", "Poem"];
     const [ selectedCategory, setCategory] = useState(null);

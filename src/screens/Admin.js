@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Login from '../components/admin/Login';
 import { motion } from 'framer-motion';
+import '../components/admin/Admin.css';
 
 const Admin = () => {
     return(

@@ -1,9 +1,6 @@
 import React from 'react';
 import useFireStore from '../../hooks/useFireStore';
 import moment from 'moment';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import ArticleDetails from './ArticleDetails';
 
 const ArticleList = () => {
 

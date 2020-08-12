@@ -1,28 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return(
         <footer>
             <ul>
                 <li>
-                    <a href="#">
+                    <Link to="www.facebook.com">
                         <i class="fab fa-facebook-f"></i>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link to="www.instagram.com">
                         <i class="fab fa-instagram"></i>  
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link to="www.twitter.com">
                         <i class="fab fa-twitter"></i> 
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link to="www.pinterest.com">
                         <i class="fab fa-pinterest"></i> 
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </footer>

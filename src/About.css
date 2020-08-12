@@ -1,0 +1,45 @@
+/* About */
+.about-grid {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 25px 50px;
+  }
+  
+  .about-banner {
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .about-banner img {
+    width: 100%;
+    position: relative;
+    bottom: 15vh;
+  }
+  
+  .bio::first-letter {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary);
+  
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+
+  @media (min-width: 320px) and (max-width: 414px) {
+  .about-grid {
+    grid-template-rows: 0.3fr 2fr;
+  }
+
+  .about-banner {
+    height: auto;
+  }
+  .about-banner img {
+    top: 0;
+  }
+}
