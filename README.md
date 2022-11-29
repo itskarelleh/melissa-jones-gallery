@@ -4,6 +4,13 @@ A CRUD web app using React.js and Firebase
 ## Description 
 This 4 page web app was built with Reactjs and Firebase to present the user with a clean, minimalistic UI that let's them focus on the content of the web app -- the image gallery and the blog.
 
+Technologies Used:
+Framework: React.js
+Database: Firestore
+Styling: CSS
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
