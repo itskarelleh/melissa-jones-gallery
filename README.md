@@ -1,4 +1,6 @@
 # Melissa Jones Gallery and Blog Web App
+![Melissa_Jones___Photographer___Writer__1__AdobeExpress](https://github.com/karellehofler/melissa-jones-gallery/assets/23417952/d07a2b83-bd89-4b2d-a5fc-c23aa6146725)
+
 The Melissa Jones Gallery and Blog is a web app that combines React.js and Firebase to present users with a visually stunning image gallery and thought-provoking blog. With a clean and minimalistic design, the web app offers a seamless and user-friendly experience, optimized for performance and responsiveness. Through the integration of technology and creativity, this project showcases the beauty of art and knowledge, inviting users to explore and engage with captivating artwork and compelling articles in a user-centric online environment.
 
 ## Approach
