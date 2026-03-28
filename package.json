@@ -7,7 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "firebase": "^7.17.1",
-    "firebase-admin": "^9.0.0",
+    "firebase-admin": "^13.7.0",
     "firebase-functions": "^3.9.0",
     "framer-motion": "^2.3.0",
     "moment": "^2.27.0",
@@ -17,7 +17,7 @@
     "react-redux-firebase": "^3.7.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-truncate": "^2.4.0",
     "redux-firestore": "^0.13.0",
     "redux-thunk": "^2.3.0"
